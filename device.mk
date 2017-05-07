@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 # Ril needed by GPS
 PRODUCT_PACKAGES += \
     libxml2
+    
+# wifi only
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=wifi-only
 
 # Shim
 PRODUCT_PACKAGES += \
