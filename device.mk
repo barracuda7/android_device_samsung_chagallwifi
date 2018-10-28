@@ -45,17 +45,7 @@ PRODUCT_COPY_FILES += \
 # Ril needed by GPS
 PRODUCT_PACKAGES += \
     libxml2
-
-# MicroG
-PRODUCT_PACKAGES += \
-    DroidGuard \
-    FakeStore \
-    FDroid \
-    GmsCore \
-    GsfProxy \
-    MozillaNlpBackend \
-    NominatimNlpBackend
-        
+    
 # wifi only
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
