@@ -34,7 +34,7 @@ TARGET_BOARD_INFO_FILE ?= device/samsung/chagallwifi/board-info.txt
 USE_CLANG_PLATFORM_BUILD := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_deathly_chagallwifi_defconfig
+TARGET_KERNEL_CONFIG := lineageos_chagallwifi_defconfig
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -53,6 +53,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/chagallwifi/sepolicy
 
 # Fixes screen flicker
 TARGET_FORCE_SCREENSHOT_CPU_PATH := true
