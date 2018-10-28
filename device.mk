@@ -37,6 +37,12 @@ TARGET_SCREEN_WIDTH := 1600
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fingerprintd \
+    fingerprint.universal5420 \
+    validityService
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
@@ -55,10 +61,6 @@ PRODUCT_PACKAGES += \
     GsfProxy \
     MozillaNlpBackend \
     NominatimNlpBackend
-        
-# wifi only
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
 
 # Shim
 PRODUCT_PACKAGES += \
@@ -67,6 +69,7 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
     fstab.universal5420 \
