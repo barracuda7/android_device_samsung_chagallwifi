@@ -162,7 +162,7 @@ INPUT_CHANNEL_MAP {
   <ctl name="AIF3TX2 Input 3 Volume" value="32" />
   <ctl name="AIF3TX2 Input 4 Volume" value="32" />
 
-  <ctl name="Input Ramp Up" value="8ms/8dB" />
+  <ctl name="Input Ramp Up" value="8ms/6dB" />
 
   <ctl name="RCV Switch" value="0" />
   <ctl name="SPK Switch" value="0" />
@@ -210,9 +210,9 @@ INPUT_CHANNEL_MAP {
 
   <path name="speaker">
     <ctl name="SPK Switch" value="1" />
-    <ctl name="Speaker Digital Volume" value="100" />
-    <ctl name="SPKOUTL Input 1 Volume" value="70" />
-    <ctl name="SPKOUTR Input 1 Volume" value="70" />
+    <ctl name="Speaker Digital Volume" value="120" />
+    <ctl name="SPKOUTL Input 1 Volume" value="45" />
+    <ctl name="SPKOUTR Input 1 Volume" value="45" />
 
   </path>
 
