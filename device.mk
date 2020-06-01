@@ -52,6 +52,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxml2
 
+# MicroG
+PRODUCT_PACKAGES += \
+    DroidGuard \
+    FakeStore \
+    FDroid \
+    GmsCore \
+    GsfProxy \
+    MozillaNlpBackend \
+    NominatimNlpBackend
+
 # Shim
 PRODUCT_PACKAGES += \
     libshim
